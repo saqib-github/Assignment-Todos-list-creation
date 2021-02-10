@@ -10,3 +10,7 @@ This project created in HTML, Bootstrap and JavaScript.
 Html Added Successfully. and below is the output image after html structure without css.
 
 ![Screenshot](todoAssignmentS1.png)
+
+CSS file Edit and Below is output image
+
+![Screenshot](todoAssignment2.png)
