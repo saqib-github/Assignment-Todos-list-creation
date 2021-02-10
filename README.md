@@ -6,3 +6,5 @@ This Application Created for Todo's task management.
 
 
 This project created in HTML, Bootstrap and JavaScript.
+
+![Screenshot](todoAssignmentS1.png)
