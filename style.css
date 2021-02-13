@@ -5,94 +5,60 @@
 }
 body{
 
-    height: 100%;
-    background-color: blueviolet;
+    height: 50%;
 }
-h1{
-    font-size: 3rem;
-    font-weight: 50;
-    margin: 3rem 0 3rem;
-    text-align: center;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-}
-.styling{
-    font-weight: 800;
-    color: lime;
-}
-.input_div{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+ol{
+    list-style: none;
+    counter-reset: mycounter;
 }
-.input_div .input{
-    padding: 0.5rem 1rem;
-    height 50px;
-    outline: none;
-    background-color: #fff;
-    width: 450px;
-    font-size: 1.15rem;
-    margin: 0.25rem;
-    border-radius: 25px;
-}
-.addButton{
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    background-color: #fff;
+ol li{
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+    font-size: 18px;
+    height: 4rem;
+    width: 30rem;
     color: #fff;
-    margin: 00.25rem;
-    background-color: lime;
+    background-color: brown;
+    counter-increment: mycounter;
+    text-decoration: #fff;
+}
+ol.Completed li{ 
+     background-color: green;
+     color: #fff;
+     text-decoration: #fff;
+} 
+
+ol li::before{
+    content: counter(mycounter);
+    background: blue;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-right: 0.5rem;
+}
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    outline: none;
     cursor: pointer;
+    color:#fff;
 }
-.addButton:hover{
-    opacity: 0.7;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-}
-.item{
-    padding: 00.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 4px solid #fff;
-}
-.item_input{
-    background-color: blueviolet;
-    outline: none;
-    color: #fff;
-    border: none;
-    width: 350px;
-    font-size: 1.4rem;
-}
-.editButton{
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin: 0 0.75rem;
-    font-family: 'Roboto', sans-serif;
-    background-color: blueviolet;
-    outline: none;
-    color: lime;
-    border: none;
-}
-.removeButton{
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin: 0 0.75rem;
-    font-family: 'Roboto', sans-serif;
-    background-color: blueviolet;
-    outline: none;
-    color:red;
-    border: none;
-}
+
+
+
+
 
 
 
